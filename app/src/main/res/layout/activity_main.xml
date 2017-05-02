@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.thirdproject.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/earth"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GeoQuiz"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                android:textSize="36sp"
+                android:background="#ddd"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/header">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#1 Question"
+                android:textAlignment="center"
+                android:background="#ddd"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which parallel touches the Galapagos Islands?"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <RadioGroup
+                android:id="@+id/rG1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/first_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equator"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/first_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tropic of Cancer"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/first_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Antarctic Circle"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#2 Question"
+                android:textAlignment="center"
+                android:background="#ddd"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the capital of Australia?"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <RadioGroup
+                android:id="@+id/rG2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/second_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sydney"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/second_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Canberra"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/second_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melbourne"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#3 Question"
+                android:textAlignment="center"
+                android:background="#ddd"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which countries are the members of the OPEC?"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/third_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iran"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/third_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hungary"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/third_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indonesia"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/third_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Myanmar"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#4 Question"
+                android:textAlignment="center"
+                android:background="#ddd"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many members does the EU have?"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/fourthQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#444"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#5 Question"
+                android:textAlignment="center"
+                android:background="#ddd"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which colors does the Ukrainian flag have?"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/fifth_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/fifth_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/fifth_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yellow"
+                    android:layout_weight="1"/>
+                <CheckBox
+                    android:id="@+id/fifth_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Magenta"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#6 Question"
+                android:textAlignment="center"
+                android:background="#ddd"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many stars does the US flag have?"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/sixthQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#444"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit!"
+            android:layout_below="@id/questions"
+            android:paddingTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="submit"/>
+
+        <TextView
+            android:id="@+id/scoreTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submitBtn"
+            android:text=""
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:textAlignment="center"
+            android:textSize="36sp"/>
+        <TextView
+            android:id="@+id/answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreTv"
+            android:text=""/>
+    </RelativeLayout>
+</ScrollView>
