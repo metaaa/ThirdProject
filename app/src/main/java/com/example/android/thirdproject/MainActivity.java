@@ -11,6 +11,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static android.R.attr.max;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     boolean fourth = false;
     boolean fifth = false;
     boolean sixth = false;
-    int score = 0;
+    int score;
+    int maxScore = 6;
 
     public void firstRB() {
         RadioButton radio = (RadioButton) findViewById(R.id.first_A);
@@ -46,43 +49,35 @@ public class MainActivity extends AppCompatActivity {
     public void thirdCB(){
         //correct
         CheckBox thirdA = (CheckBox) findViewById(R.id.third_A);
-        boolean isA = thirdA.isChecked();
         CheckBox thirdB = (CheckBox) findViewById(R.id.third_B);
-        boolean isB = thirdB.isChecked();
         //correct
         CheckBox thirdC = (CheckBox) findViewById(R.id.third_C);
-        boolean isC = thirdC.isChecked();
         CheckBox thirdD = (CheckBox) findViewById(R.id.third_D);
-        boolean isD = thirdD.isChecked();
 
-        if (isA && isC){
+        if (thirdA.isChecked() && !thirdB.isChecked() && thirdC.isChecked() && !thirdD.isChecked()){
             third = true;
         }
     }
     public void fourthET(){
         EditText fourthQ = (EditText) findViewById(R.id.fourthQ);
-        String fourth_ans = fourthQ.getText().toString();
+        String fourth_ans = fourthQ.getText().toString().trim();
         fourth = fourth_ans.equals("28");
     }
 
     public void fifthCB() {
         CheckBox fifthA = (CheckBox) findViewById(R.id.fifth_A);
-        boolean isA = fifthA.isChecked();
         CheckBox fifthB = (CheckBox) findViewById(R.id.fifth_B);
-        boolean isB = fifthB.isChecked();
         CheckBox fifthC = (CheckBox) findViewById(R.id.fifth_C);
-        boolean isC = fifthC.isChecked();
         CheckBox fifthD = (CheckBox) findViewById(R.id.fifth_D);
-        boolean isD = fifthD.isChecked();
 
-        if (isA && isC){
+        if (fifthA.isChecked() && !fifthB.isChecked() && fifthC.isChecked() && !fifthD.isChecked()){
             fifth = true;
         }
     }
 
     public void sixthET(){
         EditText sixthQ = (EditText) findViewById(R.id.sixthQ);
-        String sixth_ans = sixthQ.getText().toString();
+        String sixth_ans = sixthQ.getText().toString().trim();
         sixth = sixth_ans.equals("50");
     }
 
@@ -126,9 +121,16 @@ public class MainActivity extends AppCompatActivity {
         fifthCB();
         sixthET();
         score(first, second, third, fourth, fifth, sixth);
-        Toast.makeText(this, "Swipe down to see your score!", Toast.LENGTH_LONG);
         displayScore("Your Score: " + score);
         displayAnswers("The correct answers were:\n#1 Equator\n#2 Canberra\n#3 Iran, Indonesia\n#4 28\n#5 Blue, yellow\n#6 50");
+
+        if (score == maxScore){
+            Toast.makeText(this, getString(R.string.percent_100), Toast.LENGTH_LONG).show();
+        } else if (score >= 4 && score < maxScore){
+            Toast.makeText(this, maxScore + "/" + score + " - " + getString(R.string.percent_66), Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, maxScore + "/" + score + " - " + getString(R.string.percent_under_66), Toast.LENGTH_LONG).show();
+        }
         score = 0;
         first = false;
         second = false;

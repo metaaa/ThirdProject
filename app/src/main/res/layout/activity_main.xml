@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GeoQuiz"
+                android:text="@string/header_title"
                 android:textAlignment="center"
                 android:layout_centerVertical="true"
                 android:textSize="36sp"
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#1 Question"
+                android:text="@string/question_1_label"
                 android:textAlignment="center"
                 android:background="#ddd"
                 android:textSize="18sp"
@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Which parallel touches the Galapagos Islands?"
+                android:text="@string/question_1_q"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:paddingTop="5dp"
@@ -68,28 +68,28 @@
                     android:id="@+id/first_A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Equator"
+                    android:text="@string/question_1_option_1"
                     android:layout_weight="1"/>
 
                 <RadioButton
                     android:id="@+id/first_B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tropic of Cancer"
+                    android:text="@string/question_1_option_2"
                     android:layout_weight="1"/>
 
                 <RadioButton
                     android:id="@+id/first_C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Antarctic Circle"
+                    android:text="@string/question_1_option_3"
                     android:layout_weight="1"/>
             </RadioGroup>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#2 Question"
+                android:text="@string/question_2_label"
                 android:textAlignment="center"
                 android:background="#ddd"
                 android:textSize="18sp"
@@ -98,7 +98,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="What is the capital of Australia?"
+                android:text="@string/question_2_q"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:paddingTop="5dp"
@@ -114,28 +114,28 @@
                     android:id="@+id/second_A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sydney"
+                    android:text="@string/question_2_option_1"
                     android:layout_weight="1"/>
 
                 <RadioButton
                     android:id="@+id/second_B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Canberra"
+                    android:text="@string/question_2_option_2"
                     android:layout_weight="1"/>
 
                 <RadioButton
                     android:id="@+id/second_C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Melbourne"
+                    android:text="@string/question_2_option_3"
                     android:layout_weight="1"/>
             </RadioGroup>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#3 Question"
+                android:text="@string/question_3_label"
                 android:textAlignment="center"
                 android:background="#ddd"
                 android:textSize="18sp"
@@ -144,7 +144,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Which countries are the members of the OPEC?"
+                android:text="@string/question_3_q"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:paddingTop="5dp"
@@ -158,32 +158,32 @@
                     android:id="@+id/third_A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Iran"
+                    android:text="@string/question_3_option_1"
                     android:layout_weight="1"/>
                 <CheckBox
                     android:id="@+id/third_B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hungary"
+                    android:text="@string/question_3_option_2"
                     android:layout_weight="1"/>
                 <CheckBox
                     android:id="@+id/third_C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Indonesia"
+                    android:text="@string/question_3_option_3"
                     android:layout_weight="1"/>
                 <CheckBox
                     android:id="@+id/third_D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Myanmar"
+                    android:text="@string/question_3_option_4"
                     android:layout_weight="1"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#4 Question"
+                android:text="@string/question_4_label"
                 android:textAlignment="center"
                 android:background="#ddd"
                 android:textSize="18sp"
@@ -192,7 +192,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="How many members does the EU have?"
+                android:text="@string/question_4_q"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:paddingTop="5dp"
@@ -206,7 +206,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#5 Question"
+                android:text="@string/question_5_label"
                 android:textAlignment="center"
                 android:background="#ddd"
                 android:textSize="18sp"
@@ -215,7 +215,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Which colors does the Ukrainian flag have?"
+                android:text="@string/question_5_q"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:paddingTop="5dp"
@@ -228,32 +228,32 @@
                     android:id="@+id/fifth_A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Blue"
+                    android:text="@string/question_5_option_1"
                     android:layout_weight="1"/>
                 <CheckBox
                     android:id="@+id/fifth_B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Green"
+                    android:text="@string/question_5_option_2"
                     android:layout_weight="1"/>
                 <CheckBox
                     android:id="@+id/fifth_C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yellow"
+                    android:text="@string/question_5_option_3"
                     android:layout_weight="1"/>
                 <CheckBox
                     android:id="@+id/fifth_D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Magenta"
+                    android:text="@string/question_5_option_4"
                     android:layout_weight="1"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#6 Question"
+                android:text="@string/question_6_label"
                 android:textAlignment="center"
                 android:background="#ddd"
                 android:textSize="18sp"
@@ -262,7 +262,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="How many stars does the US flag have?"
+                android:text="@string/question_6_q"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:paddingTop="5dp"
@@ -279,7 +279,7 @@
             android:id="@+id/submitBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit!"
+            android:text="@string/submit"
             android:layout_below="@id/questions"
             android:paddingTop="25dp"
             android:layout_centerHorizontal="true"

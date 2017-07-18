@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">Third Project</string>
+    <string name="header_title">GeoQuiz</string>
+    <!--PERCENTS-->
+    <string name="percent_100">Excellent work! You have 100%!</string>
+    <string name="percent_66">Not bad! Keep practicing!</string>
+    <string name="percent_under_66">Sorry! Try again...</string>
+    <!--QUESTION 1 STRINGS-->
+    <string name="question_1_label">#1 Question</string>
+    <string name="question_1_q">Which parallel touches the Galapagos Islands?</string>
+    <string name="question_1_option_1">Equator</string>
+    <string name="question_1_option_2">Tropic of Cancer</string>
+    <string name="question_1_option_3">Antarctic Circle</string>
+    <!--QUESTION 2 STRINGS-->
+    <string name="question_2_label">#2 Question</string>
+    <string name="question_2_q">What is the capital of Australia?</string>
+    <string name="question_2_option_1">Sydney</string>
+    <string name="question_2_option_2">Canberra</string>
+    <string name="question_2_option_3">Melbourne</string>
+    <!--QUESTION 3 STRINGS-->
+    <string name="question_3_label">#3 Question</string>
+    <string name="question_3_q">Which countries are the members of the OPEC?</string>
+    <string name="question_3_option_1">Iran</string>
+    <string name="question_3_option_2">Hungary</string>
+    <string name="question_3_option_3">Indonesia</string>
+    <string name="question_3_option_4">Myanmar</string>
+    <!--QUESTION 4 STRINGS-->
+    <string name="question_4_label">#4 Question</string>
+    <string name="question_4_q">How many members does the EU have?</string>
+    <!--QUESTION 5 STRINGS-->
+    <string name="question_5_label">#5 Question</string>
+    <string name="question_5_q">Which colors does the Ukrainian flag have?</string>
+    <string name="question_5_option_1">Blue</string>
+    <string name="question_5_option_2">Green</string>
+    <string name="question_5_option_3">Yellow</string>
+    <string name="question_5_option_4">Magenta</string>
+    <!--QUESTION 6 STRINGS-->
+    <string name="question_6_label">#6 Question</string>
+    <string name="question_6_q">How many stars does the US flag have?</string>
+    <string name="submit">Submit!</string>
 </resources>
