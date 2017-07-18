@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public void firstRB() {
         RadioButton radio = (RadioButton) findViewById(R.id.first_A);
         boolean radioA = radio.isChecked();
-        if (radioA == true){
+        if (radioA){
             first = true;
         }
     }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public void secondRB() {
         RadioButton radio = (RadioButton) findViewById(R.id.second_B);
         boolean radioB = radio.isChecked();
-        if (radioB == true){
+        if (radioB){
             second = true;
         }
     }
